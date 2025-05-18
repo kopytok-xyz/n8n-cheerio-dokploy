@@ -13,6 +13,7 @@ services:
       - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
       - N8N_SECURE_COOKIE=false
       - N8N_ALLOW_EXTERNAL_MODULES=true
+      - NODE_FUNCTION_ALLOW_EXTERNAL=cheerio
     ports:
       - "5678:5678"
     volumes:
